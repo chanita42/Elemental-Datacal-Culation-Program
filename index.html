@@ -155,6 +155,7 @@
                     const resultHTML = `
                         <p><strong>ชื่อ:</strong> ${element.name}<br>
                            <strong>สัญลักษณ์:</strong> ${element.symbol}<br>
+                           <strong>หมู่:</strong> ${element.grop}<br>
                            <strong>หมายเลขอะตอม:</strong> ${element.atomicNumber}<br>
                            <strong>มวลอะตอม:</strong> ${element.atomicWeight}<br>
                            <strong>ความหนาแน่น:</strong> ${element.density} g/cm³<br>
@@ -210,7 +211,6 @@
                 }
             }
         }
-
         // ฟังก์ชั่นเพื่อไปยังหน้าคำนวณ
         function showCalculator() {
             // เคลียร์ข้อมูลการค้นหาทุกครั้งก่อนไปหน้าคำนวณ
@@ -221,7 +221,6 @@
             document.getElementById("searchSection").style.display = "none";
             document.getElementById("calculatorSection").style.display = "block";
         }
-
         // ฟังก์ชั่นกลับไปที่หน้าค้นหาธาตุ
         function goBack() {
             // เคลียร์ข้อมูลทุกอย่างในหน้าคำนวณ
@@ -232,7 +231,6 @@
             document.getElementById("calculatorSection").style.display = "none";
             document.getElementById("searchSection").style.display = "block";
         }
-
         // แสดงหน้าค้นหาธาตุเป็นค่าเริ่มต้น
         window.onload = function() {
             document.getElementById("searchSection").style.display = "block";
